@@ -1,0 +1,15 @@
+import axios from "axios";
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+export const API_URL = `${BACKEND_URL}/api`;
+export const WS_URL = `${BACKEND_URL.replace(/^http/, "ws")}/api/ws/chat`;
+
+const api = axios.create({ baseURL: API_URL });
+
+api.interceptors.request.use((cfg) => {
+  const t = localStorage.getItem("token");
+  if (t) cfg.headers.Authorization = `Bearer ${t}`;
+  return cfg;
+});
+
+export default api;
