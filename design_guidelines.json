@@ -1,0 +1,115 @@
+{
+  "project_name": "NsRacing",
+  "theme": "Dark",
+  "archetype": "Archetype 7 (Electric & Neon) / Performance Pro hybrid",
+  "vibe": "High-speed racing, Cyberpunk, NFS Underground, F1 telemetry, Neon glow, Energetic, Fast",
+  "typography": {
+    "heading_font": "Orbitron, sans-serif",
+    "body_font": "Rajdhani, sans-serif",
+    "rules": {
+      "h1": "text-5xl md:text-7xl tracking-tighter uppercase italic font-black",
+      "h2": "text-3xl md:text-4xl tracking-tight uppercase font-bold",
+      "h3": "text-xl md:text-2xl uppercase font-semibold",
+      "body": "text-base tracking-wide font-medium",
+      "labels": "text-xs uppercase tracking-widest font-bold"
+    }
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#121212",
+    "surface_glass": "rgba(18, 18, 18, 0.75)",
+    "primary_red": "#FF1E1E",
+    "primary_blue": "#00C2FF",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border": "#27272A",
+    "neon_red_glow": "drop-shadow(0 0 12px rgba(255,30,30,0.8))",
+    "neon_blue_glow": "drop-shadow(0 0 12px rgba(0,194,255,0.8))",
+    "box_shadow_red": "0 0 20px rgba(255,30,30,0.4)",
+    "box_shadow_blue": "0 0 20px rgba(0,194,255,0.4)"
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-4 md:px-8",
+    "section_gap": "gap-16 md:gap-24",
+    "bento_spacing": "gap-4 md:gap-6",
+    "alignment": "Strict geometric alignments. Centered main navigation menu."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-transparent border-2 border-[#FF1E1E] text-[#FF1E1E] uppercase font-bold tracking-widest hover:bg-[#FF1E1E] hover:text-white transition-all duration-200 shadow-[0_0_15px_rgba(255,30,30,0.3)] hover:shadow-[0_0_30px_rgba(255,30,30,0.8)] [clip-path:polygon(15px_0,100%_0,calc(100%-15px)_100%,0_100%)] px-8 py-3",
+      "secondary": "bg-transparent border-2 border-[#00C2FF] text-[#00C2FF] uppercase font-bold tracking-widest hover:bg-[#00C2FF] hover:text-white transition-all duration-200 shadow-[0_0_15px_rgba(0,194,255,0.3)] hover:shadow-[0_0_30px_rgba(0,194,255,0.8)] [clip-path:polygon(0_0,calc(100%-15px)_0,100%_100%,15px_100%)] px-8 py-3"
+    },
+    "cards": {
+      "base": "bg-[#0A0A0A] border border-white/10 relative overflow-hidden group rounded-none",
+      "hover": "hover:border-[#00C2FF]/60 hover:shadow-[0_0_20px_rgba(0,194,255,0.15)] transition-all duration-300",
+      "decorative_corner": "absolute top-0 right-0 w-8 h-8 bg-gradient-to-bl from-[#FF1E1E]/50 to-transparent [clip-path:polygon(100%_0,0_0,100%_100%)]"
+    },
+    "tags": {
+      "rgb_animated": "inline-flex bg-gradient-to-r from-[#FF1E1E] via-[#00C2FF] to-[#FF1E1E] bg-[length:200%_auto] animate-[gradient_3s_linear_infinite] text-white text-[10px] font-black px-3 py-1 uppercase tracking-wider [clip-path:polygon(5px_0,100%_0,calc(100%-5px)_100%,0_100%)]"
+    },
+    "inputs": {
+      "text": "bg-[#0A0A0A] border border-white/20 text-white rounded-none px-4 py-2 focus:outline-none focus:border-[#00C2FF] focus:ring-1 focus:ring-[#00C2FF] transition-all font-rajdhani"
+    }
+  },
+  "pages": {
+    "Casa": {
+      "description": "Home page with high-speed racing vibe.",
+      "elements": ["Massive 'NsRacing' title with split red/blue neon glow", "Carbon fiber texture background", "Introduction text with fast entry animations"]
+    },
+    "Lives": {
+      "description": "Streaming hub for Twitch/YouTube.",
+      "elements": ["Grid of 15 video cards (3x5 or 4x4 responsive)", "Hover states ignite a blue neon border", "Telemetry-style viewer counts overlay"]
+    },
+    "Upes": {
+      "description": "Most viewed transmissions / Tops.",
+      "elements": ["Podium layout for Top 3 (1st, 2nd, 3rd)", "List view for remaining items", "Gold/Silver/Bronze metallic accents mixed with neon"]
+    },
+    "Ofertas": {
+      "description": "Token store and daily rewards.",
+      "elements": ["Token packages visually represented with racing symbols (flags, wheels)", "10h free token claim button with digital countdown timer", "Purchase confirmation modals"]
+    },
+    "Ranks": {
+      "description": "Members leaderboard.",
+      "elements": ["Rankings by tag tier and hours played", "Lateral right list for Top 3 members", "Detailed rows with user avatars and RGB tags"]
+    },
+    "Chat Geral": {
+      "description": "Global live chat.",
+      "elements": ["Customizable username colors", "Always-visible RGB rank tags", "Dark, high-contrast message bubbles"]
+    },
+    "Perfil": {
+      "description": "User profile dashboard.",
+      "elements": ["Editable Cover photo (wide header)", "Editable Profile photo (avatar)", "Biography area", "Token balance and hours stats"]
+    },
+    "Admin Panel": {
+      "description": "Complete management dashboard.",
+      "elements": ["Telemetry-style data density", "Ban/Kick quick actions", "Role/Tag assignment interface", "Creation tool for 20 RGB tags"]
+    }
+  },
+  "global_elements": {
+    "Header": {
+      "description": "Sticky top navigation",
+      "top_stats_bar": "Registered members count, Online players, Top 10 hours rank ticker",
+      "main_nav": "Centered menu links, NsRacing Logo (neon glowing)"
+    }
+  },
+  "media": {
+    "hero_background": "https://images.pexels.com/photos/28794445/pexels-photo-28794445.jpeg",
+    "carbon_texture": "https://images.pexels.com/photos/17370583/pexels-photo-17370583.jpeg",
+    "racing_flag": "https://images.unsplash.com/photo-1689974288558-c393a05cb59e",
+    "profile_cover_placeholder": "https://images.pexels.com/photos/4758140/pexels-photo-4758140.jpeg",
+    "avatar_placeholder": "https://images.unsplash.com/photo-1555532686-d0fccaccadcf"
+  },
+  "motion_and_effects": {
+    "global_transitions": "Fast, mechanical ease-out transitions (100ms-200ms) to simulate race car gear shifts. No slow, floaty animations.",
+    "scanlines_css": "background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2)); background-size: 100% 4px;",
+    "tailwind_keyframes": {
+      "gradient": "0% { background-position: 0% 50% } 50% { background-position: 100% 50% } 100% { background-position: 0% 50% }"
+    }
+  },
+  "technical_instructions": {
+    "testing": "All interactive elements (buttons, links, form inputs) MUST include a 'data-testid' attribute (e.g., data-testid='login-button').",
+    "fonts_installation": "Import Google Fonts 'Orbitron' and 'Rajdhani' in the main index.css file.",
+    "shadcn_overrides": "When using Shadcn components (Dialog, Dropdown, Form), override default rounded borders to 'rounded-none' to maintain the sharp, aggressive racing aesthetic.",
+    "icons": "Use 'lucide-react' or 'phosphor-react' for sharp, technical icons. Avoid soft, rounded icons."
+  }
+}
